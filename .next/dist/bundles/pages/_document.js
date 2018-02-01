@@ -77,6 +77,8 @@ module.exports =
 
 "use strict";
 
+console.log("Test ?")
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
