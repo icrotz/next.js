@@ -86,6 +86,10 @@ export default async ({ ErrorDebugComponent: passedDebugComponent, stripAnsi: pa
     err
   })
 
+  if (props && props.statusCode === 404) { // here
+    return emitter                         // here
+  }
+
   router.subscribe(({ Component, props, hash, err }) => {
     render({ Component, props, err, hash, emitter })
   })
