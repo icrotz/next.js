@@ -241,6 +241,8 @@ var Head = exports.Head = function (_Component2) {
 
       var pagePathname = getPagePathname(pathname);
 
+      console.log("Test ?", pathname)
+
       return _react2.default.createElement('head', this.props, (head || []).map(function (h, i) {
         return _react2.default.cloneElement(h, { key: h.key || i });
       }), _react2.default.createElement('link', { rel: 'preload', href: assetPrefix + '/_next/' + buildId + '/page' + pagePathname, as: 'script' }), _react2.default.createElement('link', { rel: 'preload', href: assetPrefix + '/_next/' + buildId + '/page/_error.js', as: 'script' }), this.getPreloadDynamicChunks(), this.getPreloadMainLinks(), styles || null, this.props.children);
